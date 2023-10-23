@@ -1,0 +1,15 @@
+{
+  "Index": {
+    "title": "Hello"
+  },
+  "Login": {
+    "title": "Login",
+    "subtitle": "If you have an account, please login",
+    "email": "Email",
+    "password": "Password",
+    "login": "Login",
+    "forget": "Forget Password?",
+    "haveno": "Don't have an account?",
+    "signup": "Sign up"
+  }
+}

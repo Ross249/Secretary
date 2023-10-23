@@ -1,0 +1,15 @@
+{
+  "Index": {
+    "title": "你好"
+  },
+  "Login": {
+    "title": "登錄",
+    "subtitle": "如果您已有帳號，請登錄",
+    "email": "電子郵件",
+    "password": "密碼",
+    "login": "登錄",
+    "forget": "忘記密碼？",
+    "haveno": "沒有帳號？",
+    "signup": "註冊"
+  }
+}
