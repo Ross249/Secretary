@@ -18,7 +18,8 @@ const ForgetForm = () => {
     verifyCode: "",
   });
 
-  const pressToSendCode = () => {
+  const pressToSendCode = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     second === 0 && setSecond(60);
   };
 
@@ -155,12 +156,12 @@ const ForgetForm = () => {
               setSignUpForm({ ...signUpForm, verifyCode: e.target.value })
             }
           />
-          <div
+          <button
             className="btn  btn-link absolute  right-1  top-1/2 -translate-y-1/2 bg-transparent border-transparent text-black no-underline hover:no-underline"
             onClick={pressToSendCode}
           >
             {second === 0 ? t("send_code") : `${second} s`}
-          </div>
+          </button>
         </div>
 
         <button className="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300">

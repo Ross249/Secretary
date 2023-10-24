@@ -3,15 +3,22 @@
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
 
 const LoginForm = () => {
   const t = useTranslations("Auth");
+  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [loginForm, setLoginForm] = useState({
     email: "",
     password: "",
   });
+
+  const pressToLogin = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    router.push("/admin");
+  };
 
   return (
     <div className="md:w-1/2 px-8 md:px-16">
@@ -76,7 +83,10 @@ const LoginForm = () => {
           </label>
         </div>
 
-        <button className="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300">
+        <button
+          className="  bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300"
+          onClick={pressToLogin}
+        >
           {t("login")}
         </button>
 
