@@ -2,7 +2,7 @@
   "Index": {
     "title": "你好"
   },
-  "Login": {
+  "Auth": {
     "title": "登錄",
     "subtitle": "如果您已有帳號，請登錄",
     "email": "電子郵件",
@@ -10,6 +10,11 @@
     "login": "登錄",
     "forget": "忘記密碼？",
     "haveno": "沒有帳號？",
-    "signup": "註冊"
+    "signup": "註冊",
+    "subtitle_sign": "如果您沒有帳號,請註冊",
+    "confirm_password": "確認密碼",
+    "already_have": "已有帳號？",
+    "verify_code": "驗證碼",
+    "send_code": "發送"
   }
 }

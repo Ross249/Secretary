@@ -2,7 +2,7 @@
   "Index": {
     "title": "Hello"
   },
-  "Login": {
+  "Auth": {
     "title": "Login",
     "subtitle": "If you have an account, please login",
     "email": "Email",
@@ -10,6 +10,11 @@
     "login": "Login",
     "forget": "Forget Password?",
     "haveno": "Don't have an account?",
-    "signup": "Sign up"
+    "signup": "Sign up",
+    "subtitle_sign": "If you don't have an account, please sign up",
+    "confirm_password": "Confirm Password",
+    "already_have": "Already have an account?",
+    "verify_code": "Verify Code",
+    "send_code": "Send"
   }
 }

@@ -1,14 +1,12 @@
 "use client";
 
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
-import dynamic from "next/dynamic";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const DSwitch = dynamic(() => import("@/components/LanguageSwitcher"), {
-  ssr: false,
-});
 const LoginForm = () => {
-  const t = useTranslations("Login");
+  const t = useTranslations("Auth");
   const [showPassword, setShowPassword] = useState(false);
   const [loginForm, setLoginForm] = useState({
     email: "",
@@ -91,13 +89,16 @@ const LoginForm = () => {
 
         <div className="mt-3 text-xs flex justify-between items-center text-[#002D74]">
           <p>{t("haveno")}</p>
-          <button className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300">
+          <Link
+            href="/auth/signup"
+            className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300"
+          >
             {t("signup")}
-          </button>
+          </Link>
         </div>
 
         <div className="mt-3 flex justify-between flex-row-reverse items-center">
-          <DSwitch />
+          <LanguageSwitcher />
         </div>
       </form>
     </div>
