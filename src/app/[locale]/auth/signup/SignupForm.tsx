@@ -169,10 +169,7 @@ const SignupForm = () => {
         </button>
 
         <div className="mt-1 text-xs border-b border-[#002D74] py-4 text-[#002D74]">
-          {
-            // TODO: add link
-          }
-          <a href="#">{t("forget")}</a>
+          <Link href="/auth/forget">{t("forget")}</Link>
         </div>
 
         <div className="mt-3 text-xs flex justify-between items-center text-[#002D74]">

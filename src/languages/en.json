@@ -15,6 +15,10 @@
     "confirm_password": "Confirm Password",
     "already_have": "Already have an account?",
     "verify_code": "Verify Code",
-    "send_code": "Send"
+    "send_code": "Send",
+    "forget_title": "Forget",
+    "reset_password": "Reset Password",
+    "new_password": "New Password",
+    "confirm_new_password": "Confirm New Password"
   }
 }

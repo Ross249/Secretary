@@ -5,7 +5,7 @@
   "Auth": {
     "title": "登錄",
     "subtitle": "如果您已有帳號，請登錄",
-    "email": "電子郵件",
+    "email": "電子郵箱",
     "password": "密碼",
     "login": "登錄",
     "forget": "忘記密碼？",
@@ -15,6 +15,10 @@
     "confirm_password": "確認密碼",
     "already_have": "已有帳號？",
     "verify_code": "驗證碼",
-    "send_code": "發送"
+    "send_code": "發送",
+    "forget_title": "忘記密碼",
+    "reset_password": "重設密碼",
+    "new_password": "新密碼",
+    "confirm_new_password": "確認新密碼"
   }
 }
