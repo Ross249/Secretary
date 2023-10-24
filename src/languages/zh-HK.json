@@ -20,5 +20,8 @@
     "reset_password": "重設密碼",
     "new_password": "新密碼",
     "confirm_new_password": "確認新密碼"
+  },
+  "Admin": {
+    "dashboard": "首頁"
   }
 }

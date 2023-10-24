@@ -20,5 +20,8 @@
     "reset_password": "Reset Password",
     "new_password": "New Password",
     "confirm_new_password": "Confirm New Password"
+  },
+  "Admin":{
+    "dashboard": "Dashboard"
   }
 }
