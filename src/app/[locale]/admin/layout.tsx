@@ -20,9 +20,9 @@ export default function LocaleLayout({
         <div>
           <div className="bg-base-100 drawer lg:drawer-open">
             <input id="drawer" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content">
-              <Providers children={children} params={{ locale }} />
-            </div>
+
+            <Providers children={children} params={{ locale }} />
+
             <DrawerSide />
           </div>
         </div>

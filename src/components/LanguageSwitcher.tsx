@@ -1,5 +1,4 @@
 "use client";
-
 import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "next-intl/client";
 import React, { useTransition } from "react";
@@ -16,14 +15,15 @@ const LanguageSwitcher = () => {
     });
   };
   return (
-    <div className="dropdown dropdown-bottom dropdown-end ">
-      <div tabIndex={0} className="btn m-1">
+    <div
+      title="Change Language"
+      className="dropdown dropdown-bottom dropdown-end "
+    >
+      <div tabIndex={0} className="btn m-1 btn-ghost normal-case">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
           fill="currentColor"
-          className="bi bi-translate"
+          className="bi bi-translate  fill-current w-6 h-6"
           viewBox="0 0 16 16"
         >
           <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
@@ -32,10 +32,10 @@ const LanguageSwitcher = () => {
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="12px"
+          height="12px"
           fill="currentColor"
-          className="bi bi-chevron-down"
+          className="bi bi-chevron-down  hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
           viewBox="0 0 16 16"
         >
           <path
