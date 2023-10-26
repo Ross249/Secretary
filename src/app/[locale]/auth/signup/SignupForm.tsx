@@ -1,5 +1,6 @@
 "use client";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -35,8 +36,8 @@ const SignupForm = () => {
 
   return (
     <div className="md:w-1/2 px-8 md:px-16">
-      <h2 className="font-bold text-2xl text-[#002D74]">{t("signup")}</h2>
-      <p className="text-xs mt-4 text-[#002D74]">{t("subtitle_sign")}</p>
+      <h2 className="font-bold text-2xl ">{t("signup")}</h2>
+      <p className="text-xs mt-4 ">{t("subtitle_sign")}</p>
       <form action="" className="flex flex-col gap-4">
         <input
           className="p-2 mt-4 rounded-xl border"
@@ -158,35 +159,35 @@ const SignupForm = () => {
             }
           />
           <button
-            className="btn  btn-link absolute  right-1  top-1/2 -translate-y-1/2 bg-transparent border-transparent text-black no-underline hover:no-underline"
+            className="btn   absolute  right-1  top-1/2 -translate-y-1/2 bg-transparent border-transparent  no-underline hover:no-underline hover:bg-transparent hover:border-transparent"
             onClick={pressToSendCode}
           >
             {second === 0 ? t("send_code") : `${second} s`}
           </button>
         </div>
 
-        <button className="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300">
+        <button className="btn rounded-xl text-white py-2 hover:scale-105 duration-300">
           {t("signup")}
         </button>
 
-        <div className="mt-1 text-xs border-b border-[#002D74] py-4 text-[#002D74]">
+        <div className="mt-1 text-xs border-b  py-4 ">
           <Link href="/auth/forget">{t("forget")}</Link>
         </div>
 
-        <div className="mt-3 text-xs flex justify-between items-center text-[#002D74]">
+        <div className="mt-3 text-xs flex justify-between items-center ">
           <p>{t("already_have")}</p>
           <Link
             href={"/auth/login"}
-            className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300"
+            className="py-2 px-5  border rounded-xl hover:scale-110 duration-300"
           >
             {t("login")}
           </Link>
         </div>
-
-        <div className="mt-2 flex justify-between flex-row-reverse items-center">
-          <LanguageSwitcher />
-        </div>
       </form>
+      <div className="mt-2 flex justify-between flex-row-reverse items-center">
+        <LanguageSwitcher />
+        <ThemeSwitcher />
+      </div>
     </div>
   );
 };

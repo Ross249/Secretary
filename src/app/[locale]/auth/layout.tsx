@@ -15,8 +15,8 @@ export default function LocaleLayout({
 
   return (
     <html data-theme="bumblebee" lang={locale}>
-      <body className="bg-slate-100 min-h-screen flex items-center justify-center">
-        <div className="bg-slate-50 flex rounded-2xl shadow-xl max-w-3xl p-5 items-center">
+      <body className="bg-base-100 min-h-screen flex items-center justify-center">
+        <div className="bg-base-50 flex rounded-2xl shadow-xl max-w-3xl p-5 items-center">
           <Providers children={children} params={{ locale }} />
           <div className="md:block hidden w-1/2 h-full">
             <img
